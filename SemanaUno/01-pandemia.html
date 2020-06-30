@@ -379,22 +379,110 @@
         </aside>
         <section>
             <article>
-                <table border="1">
+                <table border="0"  width="1400">
                     <thead>
                         <tr>
-                            <td colspan="3" ><h4>...juntos combatiremos el COVID-19!!!</h4></td>
-                            
+                            <th colspan="3">
+                                <h3>...juntos combatiremos el COVID-19!!!</h3>
+                            </th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
+                                <h3>Registra tus Datos:</h3>
+                                
                                 <form action="">
-                                    
+                                    <table border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td><label for="nombrepaciente">Nombre del paciente:</label></td>
+                                                <td><input type="text" id="nombrepaciente"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="edadpaciente">Edad del paciente:</label></td>
+                                                <td><input type="number" id="edadpaciente"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="fechacita">Fecha de Cita:</label></td>
+                                                <td><input type="date" id="fechacita"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="emailpaciente">Correo del paciente:</label></td>
+                                                <td><input type="email" id="emailpaciente"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="codigoseguro">Código de Seguro:</label></td>
+                                                <td><input type="password" id="codigoseguro"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Tipo de Servicio:</label></td>
+                                                <td>
+                                                    <label for="radioemergencia"> Emergencia</label><input type="radio"
+                                                        id="radioemergencia" name="servicio">
+                                                    <label for="radioconsulta">Cons. Externa</label><input type="radio"
+                                                        id="radioconsulta" name="servicio">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Elija el Turno:</label></td>
+                                                <td>
+                                                    <label for="turnomañana"> Mañana</label><input type="radio"
+                                                        id="turnomañana" name="turno">
+                                                    <label for="turnotarde">Tarde</label><input type="radio"
+                                                        id="turnotarde" name="turno">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Tipo de Seguro:</label></td>
+                                                <td>
+                                                    <label for="essalud">EsSalud</label><input type="checkbox"
+                                                        id="essalud">
+                                                    <label for="sis">SIS</label><input type="checkbox" id="sis">
+                                                    <label for="privado">Privado</label><input type="checkbox"
+                                                        id="privado">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Especialidades Médicas:</label></td>
+                                                <td>
+                                                    <select name="" id="especialidades">
+                                                        <option value="">-- Seleccione --</option>
+                                                        <option value="">Medicina general</option>
+                                                        <option value="">Ginecologia y Obstetricia</option>
+                                                        <option value="">Pediatria</option>
+                                                        <option value="">Cardiologia Vascular</option>
+                                                        <option value="">Medicina Interna</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="sintomas">Mencione sus Síntomas:</label></td>
+                                                <td>
+                                                    <textarea name="" id="sintomas" cols="30" rows="10"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="videoaudio">Telemedicina (Video o Audio):</label></td>
+                                                <td> <input type="file" id="videoaudio"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="colorpiel">Color de piel:</label></td>
+                                                <td> <input type="color" id="colorpiel"></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <input type="submit" value="Crear Cita"></td>
+                                                <td> <input type="reset" value="Limpiar formulario"> </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </form>
                             </td>
                             <td><img src="./img/17.jpg" alt=""></td>
-                        </tr>                        
+                        </tr>
                     </tbody>
                 </table>
 
