@@ -398,29 +398,29 @@
                                         <tbody>
                                             <tr>
                                                 <td><label for="nombrepaciente">Nombre del paciente:</label></td>
-                                                <td><input type="text" id="nombrepaciente"></td>
+                                                <td><input type="text" id="nombrepaciente" placeholder="Ejem: APELLIDOS, Nombres" required maxlength="20" minlength="10" ></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="edadpaciente">Edad del paciente:</label></td>
-                                                <td><input type="number" id="edadpaciente"></td>
+                                                <td><input type="number" id="edadpaciente" placeholder="Años" min="1" max="120" ></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="fechacita">Fecha de Cita:</label></td>
-                                                <td><input type="date" id="fechacita"></td>
+                                                <td><input type="date" id="fechacita" value="2020-06-01"></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="emailpaciente">Correo del paciente:</label></td>
-                                                <td><input type="email" id="emailpaciente"></td>
+                                                <td><input type="email" id="emailpaciente" placeholder="Correo Corporativo" value="@minsa.gob.pe"></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="codigoseguro">Código de Seguro:</label></td>
-                                                <td><input type="password" id="codigoseguro"></td>
+                                                <td><input type="password" id="codigoseguro" placeholder="6 caracteres como mínimo" pattern="" title="Mínimo 8 Carácteres, 01 Minúscula, 01 Mayúscula y 01 Número" required ></td>
                                             </tr>
                                             <tr>
                                                 <td><label>Tipo de Servicio:</label></td>
                                                 <td>
                                                     <label for="radioemergencia"> Emergencia</label><input type="radio"
-                                                        id="radioemergencia" name="servicio">
+                                                        id="radioemergencia" name="servicio" checked >
                                                     <label for="radioconsulta">Cons. Externa</label><input type="radio"
                                                         id="radioconsulta" name="servicio">
                                                 </td>
@@ -429,7 +429,7 @@
                                                 <td><label>Elija el Turno:</label></td>
                                                 <td>
                                                     <label for="turnomañana"> Mañana</label><input type="radio"
-                                                        id="turnomañana" name="turno">
+                                                        id="turnomañana" name="turno" checked >
                                                     <label for="turnotarde">Tarde</label><input type="radio"
                                                         id="turnotarde" name="turno">
                                                 </td>
@@ -439,7 +439,7 @@
                                                 <td>
                                                     <label for="essalud">EsSalud</label><input type="checkbox"
                                                         id="essalud">
-                                                    <label for="sis">SIS</label><input type="checkbox" id="sis">
+                                                    <label for="sis">SIS</label><input type="checkbox" id="sis" checked >
                                                     <label for="privado">Privado</label><input type="checkbox"
                                                         id="privado">
                                                 </td>
